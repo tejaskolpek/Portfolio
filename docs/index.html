@@ -3,41 +3,28 @@
   Read Only by HTML5 UP
   html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  Updated by ChatGPT: wired Cloudinary image assets provided by Tejas, added a few a11y + perf tweaks.
+  Filled with content from Tejas Kolpek's resume. Design/CSS kept as-is (assets/css/main.css). Minimal CSS added to normalize image sizes.
 -->
-<html lang="en">
+<html>
   <head>
     <title>Tejas Kolpek - Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Tejas Kolpek (Tej) — Cloud-native Data Engineer focused on ML, GenAI, and security. Portfolio, projects, experience, and certifications." />
-
-    <!-- Preconnect to speed up Cloudinary-hosted images -->
-    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
-
-    <link rel="stylesheet" href="assets/css/modern-theme.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
 
     <!-- Header -->
     <section id="header">
       <header>
-        <span class="image avatar">
-          <img
-            src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277287/Tejas_Kolpek_Grad_Image_-_Copy_ma4tgy.jpg"
-            alt="Portrait of Tejas Kolpek"
-            loading="eager"
-            decoding="async"
-          />
-        </span>
+        <span class="image avatar"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277287/Tejas_Kolpek_Grad_Image_-_Copy_ma4tgy.jpg" alt="Portrait of Tejas Kolpek" /></span>
         <h1 id="logo"><a href="#">Tejas Kolpek (Tej)</a></h1>
-        <p>Cloud-Native Data Engineer | ML + GenAI | Security-First Mindset</p>
+        <p>Cloud Data Engineer | ML &amp; GenAI | Security-First</p>
       </header>
-      <nav id="nav" aria-label="Primary">
+      <nav id="nav">
         <ul>
           <li><a href="#one" class="active">About Me</a></li>
-          <li><a href="#two">Skills &amp; Strengths</a></li>
+          <li><a href="#two">Things I am good at</a></li>
           <li><a href="#three">My Education</a></li>
           <li><a href="#four">My Experience</a></li>
           <li><a href="#five">My Certifications</a></li>
@@ -48,8 +35,8 @@
       </nav>
       <footer>
         <ul class="icons">
-          <li><a href="https://linkedin.com/in/tejaskolpek" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
-          <li><a href="https://github.com/tejaskolpek" class="icon brands fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="label">Github</span></a></li>
+          <li><a href="https://www.linkedin.com/in/tejaskolpek" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/tejaskolpek" class="icon brands fa-github"><span class="label">Github</span></a></li>
         </ul>
       </footer>
     </section>
@@ -63,69 +50,30 @@
         <!-- One -->
         <section id="one">
           <div class="image main" data-position="center">
-            <img src="images/banner.jpg" alt="Abstract banner" loading="lazy" decoding="async" />
+            <img src="images/IUB_banner.jpeg" alt="Banner" />
           </div>
           <div class="container">
             <header class="major">
               <h2>Hello World!</h2>
               <p>I am Tej. Thanks for dropping by my portfolio site! </p>
             </header>
-            <p>Cloud-native data engineer with 4+ years of experience building scalable ETL pipelines, integrating ML models, and deploying secure data solutions across Azure and AWS. Passionate about leveraging GenAI, MLOps, and secure architecture to deliver high-impact insights across global teams. Proven expertise in SQL, Python, Power BI, dbt, and infrastructure-as-code.</p>
-            <p><strong>Languages:</strong> English, Telugu, Hindi, Marathi</p>
+            <p>Data Engineer with 4+ years’ experience building cloud-native pipelines on Azure and AWS. Skilled in ETL frameworks, data governance, BI modernization, and secure, compliant analytics for global enterprise teams. Passionate about MLOps and GenAI, with a strong focus on reliability and measurable impact.</p>
+            <p>Languages: English, Telugu, Hindi, Marathi</p>
           </div>
         </section>
 
         <!-- Two -->
         <section id="two">
           <div class="container">
-            <h3>Skills &amp; Strengths</h3>
+            <h3>Things I am good at</h3>
             <br/>
-            <h4>🧠 Programming &amp; Data Manipulation</h4>
             <ul class="feature-icons">
-              <li class="icon solid fa-code"><span style="font-family: sans-serif;">Python – ETL scripting, ML modeling, API development</span></li>
-              <li class="icon solid fa-database"><span style="font-family: sans-serif;">SQL – Advanced usage with Window Functions, CTEs, Joins, Subqueries</span></li>
-            </ul>
-
-            <h4>⚙️ Data Engineering &amp; Pipelines</h4>
-            <ul class="feature-icons">
-              <li class="icon solid fa-cloud"><span style="font-family: sans-serif;">Azure Data Factory, Synapse, Azure SQL</span></li>
-              <li class="icon solid fa-snowflake"><span style="font-family: sans-serif;">Snowflake &amp; Databricks – scalable ELT and Lakehouse patterns</span></li>
-              <li class="icon solid fa-server"><span style="font-family: sans-serif;">AWS Glue, Lambda, Athena, RDS, S3</span></li>
-              <li class="icon solid fa-cogs"><span style="font-family: sans-serif;">Apache Airflow – Workflow orchestration</span></li>
-              <li class="icon solid fa-project-diagram"><span style="font-family: sans-serif;">dbt – Modular pipelines with SCD Type 2 logic</span></li>
-              <li class="icon solid fa-bolt"><span style="font-family: sans-serif;">PySpark – Batch &amp; hourly processing</span></li>
-              <li class="icon solid fa-exchange-alt"><span style="font-family: sans-serif;">Kafka, Hive &amp; Hadoop – streaming + big data</span></li>
-              <li class="icon solid fa-layer-group"><span style="font-family: sans-serif;">Delta Lake – ACID data lakes</span></li>
-            </ul>
-
-            <h4>☁️ Cloud Platforms</h4>
-            <ul class="feature-icons">
-              <li class="icon solid fa-microsoft"><span style="font-family: sans-serif;">Microsoft Azure – ADF, Synapse, DevOps</span></li>
-              <li class="icon solid fa-amazon"><span style="font-family: sans-serif;">Amazon Web Services – S3, Glue, Athena, RDS, Elastic Beanstalk</span></li>
-              <li class="icon solid fa-google"><span style="font-family: sans-serif;">Google Cloud Platform – BigQuery, Cloud Functions</span></li>
-            </ul>
-
-            <h4>📊 Data Visualization &amp; BI</h4>
-            <ul class="feature-icons">
-              <li class="icon solid fa-chart-bar"><span style="font-family: sans-serif;">Power BI – Enterprise dashboards, RLS security</span></li>
-              <li class="icon solid fa-desktop"><span style="font-family: sans-serif;">Streamlit – Interactive ML dashboards</span></li>
-              <li class="icon solid fa-table"><span style="font-family: sans-serif;">Excel – Advanced formulas, dashboards</span></li>
-            </ul>
-
-            <h4>🤖 Machine Learning &amp; MLOps</h4>
-            <ul class="feature-icons">
-              <li class="icon solid fa-robot"><span style="font-family: sans-serif;">MLflow – Model logging, experiment tracking</span></li>
-              <li class="icon solid fa-rocket"><span style="font-family: sans-serif;">FastAPI – Lightweight APIs for ML scoring services</span></li>
-              <li class="icon solid fa-code-branch"><span style="font-family: sans-serif;">GitHub Actions – CI/CD for pipelines and ML services</span></li>
-              <li class="icon solid fa-box"><span style="font-family: sans-serif;">Docker – containerization for reproducible builds</span></li>
-              <li class="icon solid fa-dharmachakra"><span style="font-family: sans-serif;">Kubernetes – orchestration &amp; scaling</span></li>
-              <li class="icon solid fa-tools"><span style="font-family: sans-serif;">Jenkins/Azure DevOps – CI/CD pipelines</span></li>
-            </ul>
-
-            <h4>🔐 Security &amp; Compliance</h4>
-            <ul class="feature-icons">
-              <li class="icon solid fa-shield-alt"><span style="font-family: sans-serif;">IAM, RBAC, KMS, SSO</span></li>
-              <li class="icon solid fa-lock"><span style="font-family: sans-serif;">Compliant with PCI DSS, HIPAA, GDPR standards</span></li>
+              <li class="icon solid fa-cloud"><span style="font-family: sans-serif;">Design cloud-native ETL/ELT (Azure ADF, Synapse, AWS)</span></li>
+              <li class="icon solid fa-database"><span style="font-family: sans-serif;">Data modeling &amp; SQL optimization (star schemas, indexing)</span></li>
+              <li class="icon solid fa-project-diagram"><span style="font-family: sans-serif;">Build dbt &amp; PySpark pipelines with validation &gt;99% accuracy</span></li>
+              <li class="icon solid fa-chart-bar"><span style="font-family: sans-serif;">Power BI dashboards with RLS for 1,500+ users</span></li>
+              <li class="icon solid fa-user-shield"><span style="font-family: sans-serif;">RBAC, column-level security, GDPR-aligned governance</span></li>
+              <li class="icon solid fa-code-branch"><span style="font-family: sans-serif;">CI/CD with GitHub Enterprise &amp; Azure DevOps</span></li>
             </ul>
           </div>
         </section>
@@ -134,11 +82,12 @@
         <section id="three">
           <div class="container">
             <h3>My Education</h3>
-            $1 | GPA: 3.58/4$2
-            <p><strong>Relevant Coursework:</strong> Machine Learning, Statistical Learning, Data Mining, Cloud Computing, Applied Data Science, MLOps, Advanced Python Programming, Cloud and Data Security</p>
+            <h4>Master of Science in Engineering Science (Data Science), University at Buffalo – SUNY, Buffalo, NY, USA, Jan 2024 – May 2025</h4>
+            <h5>GPA: 3.58 out of 4</h5>
+            <p><strong>Coursework:</strong> Machine Learning, Statistical Learning, Data Mining, Cloud Computing, Applied Data Science, MLOps, Advanced Python Programming, Cloud &amp; Data Security</p>
             <br/>
-            <h4>Bachelor of Science in Information Technology, University of Mumbai, Mumbai, Maharashtra, India, 2018 – 2021</h4>
-            <h5>GPA: 8.72 out of 10</h5>
+            <h4>Bachelor of Science in Information Technology, University of Mumbai, Mumbai, India, Jun 2018 – May 2021</h4>
+            <h5>GPA: 3.96 out of 4</h5>
           </div>
         </section>
 
@@ -146,23 +95,24 @@
         <section id="four">
           <div class="container">
             <h3>My Experience</h3>
-            <h4>Data Engineer, Dell Technologies – Senior Representative, Business Intelligence &amp; Business Operations, Bangalore, India (Remote), Sept 2021 – Jan 2024</h4>
+
+            <h4>DELL Technologies | Senior Representative – Business Intelligence &amp; Business Operations, Bangalore, India (Remote) | Sep 2021 – Jan 2024</h4>
             <ul>
-              <li>Processed 100M+ monthly telemetry order log records from Oracle DB, REST APIs, and Greenplum into Azure Data Lake Storage via Azure Data Factory (trigger-based, parameterized pipelines), delivering clean, structured data for analytics.</li>
-              <li>Co-authored a standardized ETL framework using ADF, Synapse, Databricks, dbt, SQL, and PySpark, incorporating anomaly detection, validation checks, and orchestration best practices to maintain &gt;99% data accuracy.</li>
-              <li>Migrated legacy OBIEE dashboards to Power BI, applying Azure AD Row-Level Security and star schema optimization with indexed relationships; enabled secure, role-based access for 1,500+ global users.</li>
-              <li>Developed and maintained core usage reports (Health Check, Asset List, Asset Book) powering contract usage monitoring, asset inventories with millions of entries, and storage consumption trend analysis.</li>
-              <li>Implemented RBAC, column-level security, and data masking for sensitive metrics, aligning with GDPR and enterprise compliance standards.</li>
-              <li>Authored SOPs, data governance playbooks, and technical documentation; led knowledge-sharing sessions for stakeholders across AMER, EMEA, and APJ.</li>
-              <li>Used GitHub Enterprise and Azure DevOps for CI/CD and version control of ETL scripts, dbt models, Power BI artifacts, and Synapse queries, ensuring consistent and reversible deployments.</li>
+              <li>Processed 100M+ monthly telemetry order log records from Oracle DB, REST APIs, and Greenplum into Azure Data Lake Storage via Azure Data Factory (trigger-based, parameterized pipelines).</li>
+              <li>Designed a standardized ETL framework (ADF, Synapse, Databricks, dbt, SQL, PySpark) with anomaly detection and validation checks to maintain &gt;99% data accuracy.</li>
+              <li>Migrated legacy OBIEE dashboards to Power BI with Azure AD Row-Level Security and optimized star schemas; enabled secure access for 1,500+ global users.</li>
+              <li>Maintained core usage reports (Health Check, Asset List, Asset Book) for contract usage monitoring, asset inventories, and storage consumption trend analysis.</li>
+              <li>Implemented RBAC, column-level security, and masking for sensitive metrics, aligning with GDPR and enterprise compliance standards.</li>
+              <li>Authored SOPs and data governance playbooks; led knowledge-sharing sessions for stakeholders across AMER, EMEA, and APJ.</li>
+              <li>Version-controlled ETL/dbt/BI artifacts with GitHub Enterprise &amp; Azure DevOps CI/CD for consistent, reversible deployments.</li>
             </ul>
 
-            <h4>Data Engineer, Shaalastic LLP (E-learning Startup) – Backend &amp; Data Engineering Support, Mumbai, India (Remote), Jan 2020 – Aug 2021</h4>
+            <h4>Shaalastic LLP (E-learning Startup) | Data Engineer, Backend Support, Mumbai, India (Remote) | Jan 2020 – Aug 2021</h4>
             <ul>
-              <li>Collaborated with backend engineers to design AWS RDS (PostgreSQL) schemas for ERP modules (student, fees, teachers, activities), enabling reliable APIs for web and mobile apps.</li>
-              <li>Built Python + SQL ETL pipelines to process attendance, payments, and class schedules from CSV/Excel and application logs into curated datasets on AWS S3 and RDS.</li>
-              <li>Automated workflows with AWS Lambda and CloudWatch alerts to flag missing attendance records, late fee entries, and timetable conflicts in near real time.</li>
-              <li>Implemented data validation checks to prevent incomplete or corrupted data from impacting application features; documented API field mappings and ERP workflows; led onboarding knowledge sharing.</li>
+              <li>Co-designed AWS RDS (PostgreSQL) schemas for ERP modules (students, fees, teachers, activities), enabling reliable APIs for web and mobile apps.</li>
+              <li>Built Python + SQL ETL to process attendance, payments, and schedules from CSV/Excel and logs into curated datasets on AWS S3 and RDS.</li>
+              <li>Automated workflows with AWS Lambda and CloudWatch to flag missing attendance, late fee entries, and timetable conflicts in near real time.</li>
+              <li>Implemented validation checks to prevent incomplete/corrupted data; documented API field mappings and ERP workflows; led onboarding knowledge sharing.</li>
             </ul>
           </div>
         </section>
@@ -174,9 +124,7 @@
             <p>I love doing certifications. Below are a few that I pursued so far. I am parallelly working on a couple more while you are reading this information.</p>
             <div class="features">
               <article>
-                <a href="https://www.credly.com/badges/ac2ce3b6-9263-4c8e-86f1-6ab79b7bb21d" class="image" target="_blank" rel="noopener noreferrer">
-                  <img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_Solution_Engineer_pkwnrp.png" alt="AWS Certified Solutions Architect – Associate badge" loading="lazy" decoding="async" />
-                </a>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_Solution_Engineer_pkwnrp.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_Solution_Engineer_pkwnrp.png" alt="AWS Certified Solutions Architect – Associate" /></a>
                 <div class="inner">
                   <h4>AWS Certified Solutions Architect – Associate (SAA-C03)</h4>
                   <p>Skills learned and applied: AWS architecture, cloud design, security, scalability, and cost optimization</p>
@@ -184,9 +132,7 @@
               </article>
 
               <article>
-                <a href="https://www.credly.com/badges/a6fad69d-844c-49ed-b3a2-4e2b72891cb3" class="image" target="_blank" rel="noopener noreferrer">
-                  <img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_CCP_hqshsr.png" alt="AWS Certified Cloud Practitioner badge" loading="lazy" decoding="async" />
-                </a>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_CCP_hqshsr.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277282/AWS_CCP_hqshsr.png" alt="AWS Certified Cloud Practitioner" /></a>
                 <div class="inner">
                   <h4>AWS Certified Cloud Practitioner (CLF-C02)</h4>
                   <p>Skills learned and applied: AWS cloud concepts, security, architecture, pricing, and support</p>
@@ -194,9 +140,7 @@
               </article>
 
               <article>
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/TejasKolpek-3065/C1B1F4D4276E832F" class="image" target="_blank" rel="noopener noreferrer">
-                  <img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277202/Azure_Fundamentals_akgozq.png" alt="Microsoft Certified: Azure Fundamentals badge" loading="lazy" decoding="async" />
-                </a>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277202/Azure_Fundamentals_akgozq.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277202/Azure_Fundamentals_akgozq.png" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" /></a>
                 <div class="inner">
                   <h4>Microsoft Certified: Azure Fundamentals (AZ-900)</h4>
                   <p>Skills learned and applied: Azure cloud concepts, services, security, privacy, compliance, and pricing</p>
@@ -204,75 +148,45 @@
               </article>
 
               <article>
-                <a href="https://www.credly.com/badges/18b956c0-761d-4c37-baa7-9af51e4b07cb" class="image" target="_blank" rel="noopener noreferrer">
-                  <img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277182/Azure_Data_Science_yaxfac.png" alt="Microsoft Certified: Azure Data Scientist Associate badge" loading="lazy" decoding="async" />
-                </a>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277182/Azure_Data_Science_yaxfac.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277182/Azure_Data_Science_yaxfac.png" alt="Microsoft Certified: Azure Data Scientist Associate (DP-100)" /></a>
                 <div class="inner">
                   <h4>Microsoft Certified: Azure Data Scientist Associate (DP-100)</h4>
                   <p>Skills learned and applied: Azure Machine Learning, data science workflows, model training and deployment</p>
                 </div>
               </article>
 
-              $1
+              <article>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277286/Microsoft-Power-Bi-Data-Analyst-Associate-logo_vqlpks.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277286/Microsoft-Power-Bi-Data-Analyst-Associate-logo_vqlpks.png" alt="Microsoft Certified: Power BI Data Analyst Associate (PL-300)" /></a>
+                <div class="inner">
+                  <h4>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h4>
+                  <p>Skills learned and applied: Data preparation, modeling, visualization, and analysis using Power BI</p>
+                </div>
+              </article>
 
               <article>
-                <a href="#" class="image">
-                  <img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277283/Azure_Solution_Arch_vchy8i.png" alt="Designing Microsoft Azure Infrastructure Solutions (AZ-305)" loading="lazy" decoding="async" />
-                </a>
+                <a href="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277283/Azure_Solution_Arch_vchy8i.png" class="image"><img src="https://res.cloudinary.com/da1qmhpra/image/upload/v1755277283/Azure_Solution_Arch_vchy8i.png" alt="Designing Microsoft Azure Infrastructure Solutions (AZ-305)" /></a>
                 <div class="inner">
                   <h4>Designing Microsoft Azure Infrastructure Solutions (AZ-305)</h4>
                   <p>Skills learned and applied: Azure architecture, security, governance, cost, identity, and data platform design</p>
                 </div>
               </article>
-
             </div>
           </div>
         </section>
 
         <!-- Six -->
-        $1
+        <section id="six">
+          <div class="container">
+            <h3>My Projects</h3>
+            <p>Below are a few hands-on projects that I worked on.</p>
+            <div class="features">
               <article>
-                <a href="#" class="image"><img src="images/Project FinTech Risk Scoring.png" alt="FinTech Risk Scoring &amp; Salary Prediction Platform" loading="lazy" decoding="async" /></a>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="FinTech Risk Scoring &amp; Salary Prediction Platform" /></a>
                 <div class="inner">
-                  <h4>💳 FinTech Risk Scoring &amp; Salary Prediction Platform</h4>
-                  <p>Designed a hybrid batch + streaming pipeline with Kafka and Spark to ingest financial and employment datasets from REST APIs into Snowflake for near real-time risk and salary predictions.</p>
-                  <p>Deployed MLflow-tracked models behind a FastAPI service with a React UI, reducing prediction latency by ~50% and enabling secure, scalable decisioning.</p>
-                  <p><em>Stack:</em> AWS, Snowflake, Kafka, Spark, REST APIs, SQL, MLflow, FastAPI, React</p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"><img src="images/Project Heart Condition Prediction.png" alt="Heart Condition Prediction" loading="lazy" decoding="async" /></a>
-                <div class="inner">
-                  <h4>❤️ Heart Condition Prediction</h4>
-                  <p>Binary Classification ML model for heart disease prediction. Built an ML pipeline to predict heart conditions using structured health data. Applied feature scaling, correlation analysis, and hyperparameter tuning on classification models (e.g., Logistic Regression, KNN, Random Forest). Evaluated performance using ROC-AUC, confusion matrix, and accuracy.</p>
-                  <p>Skills learned and applied: Python, Pandas, Scikit-learn, Matplotlib</p>
-                </div>
-              </article>
-
-              <article>
-                <a href="#" class="image"><img src="images/Project Citi Bike Prediction.png" alt="Citi Bike Trip Prediction Platform" loading="lazy" decoding="async" /></a>
-                <div class="inner">
-                  <h4>🚲 Citi Bike Trip Prediction Platform</h4>
-                  <p>Forecasting NYC Citi Bike demand using MLflow and Streamlit. Ingested trip data and engineered time-based features (lag, rolling mean). Trained 3 regression models and logged them using MLflow on Hopsworks. Automated batch inference via GitHub Actions; deployed interactive Streamlit dashboard.</p>
-                  <p>Skills learned and applied: Python, MLflow, GitHub Actions, Streamlit, LightGBM</p>
-                </div>
-              </article>
-
-              <article>
-                <a href="#" class="image"><img src="images/Project NYC Taxi Analytics.png" alt="NYC Yellow Taxi Trip Analytics" loading="lazy" decoding="async" /></a>
-                <div class="inner">
-                  <h4>🚖 NYC Yellow Taxi Trip Analytics</h4>
-                  <p>End-to-end data pipeline and forecasting dashboard. Built scalable PySpark pipelines using AWS Glue to process 10+ years of yellow taxi data. Trained LightGBM models with lag features for hourly ride prediction. Built Streamlit dashboard deployed on AWS Elastic Beanstalk, integrating S3 and Athena for dynamic querying.</p>
-                  <p>Skills learned and applied: AWS (Glue, S3, Athena, Lambda, RDS), PySpark, Streamlit, LightGBM, SQL</p>
-                </div>
-              </article>
-
-              <article>
-                <a href="#" class="image"><img src="images/Project Uber Analytics.png" alt="Uber Data Analytics" loading="lazy" decoding="async" /></a>
-                <div class="inner">
-                  <h4>🚘 Uber Data Analytics</h4>
-                  <p>Exploratory analysis of Uber ride patterns in NYC. Conducted EDA on Uber pickup datasets to identify trends across location, time, and volume. Visualized peak hours, day-of-week usage, and borough-level behavior using graphs and maps.</p>
-                  <p>Skills learned and applied: Python, Pandas, Matplotlib, Seaborn</p>
+                  <h4>FinTech Risk Scoring &amp; Salary Prediction Platform</h4>
+                  <p>Designed a hybrid batch + streaming pipeline with Kafka and Spark to process financial and employment datasets from REST APIs into Snowflake, enabling near real-time fraud risk and salary predictions.</p>
+                  <p>Deployed MLflow-tracked models via a FastAPI REST API and interactive frontend, reducing prediction latency by ~50% and enabling secure, scalable decisioning.</p>
+                  <p><em>Stack:</em> AWS, Snowflake, Kafka, Spark, REST APIs, SQL, MLflow, FastAPI</p>
                 </div>
               </article>
             </div>
@@ -284,15 +198,9 @@
           <div class="container">
             <h3>Leadership and Involvement</h3>
             <ul>
-              <li>☁️ <strong>AWS Networking Event Representative:</strong> Selected to represent University at Buffalo at an exclusive AWS Networking Event featuring cloud leaders, engineers, and alumni. Engaged in technical discussions on cloud-native design, certification paths, and enterprise cloud adoption.</li>
-              <li>⚡ <strong>Cloudforce Networking Event – UB Participant:</strong> Attended Cloudforce Buffalo, connecting with cloud startups and professionals from AWS, Microsoft, and GCP ecosystems. Explored cloud security topics and real-world MLOps practices in panel sessions and workshops.</li>
-              <li>🧑‍💻 <strong>NY State Hackathon Participant:</strong> Represented University at Buffalo in the New York State Hackathon, developing a civic-tech prototype for emergency response automation. Team placed in the Top 10 finalist group, recognized for innovation and impact.</li>
-              <li>🚀 <strong>Buffalo Startup Idea Showcase:</strong> Participated in the UB Startup Idea Performance Event, pitching a logistics optimization platform using rideshare integrations. Received positive engagement from early-stage VCs and tech mentors.</li>
-              <li>📚 <strong>Graduate Library Student Assistant:</strong> University at Buffalo – Science &amp; Engineering Library. Managed database access requests, digital resources, and supported research queries for STEM grad students and faculty.</li>
-              <li>🌍 <strong>Global Team Collaboration – Dell:</strong> Worked with distributed stakeholders across AMER, EMEA, and APJ, ensuring secure and unified telemetry analytics and asset validation.</li>
-              <li>🧑‍🏫 <strong>Peer Mentorship – UB:</strong> Mentored juniors in SQL, Power BI, and data engineering interview prep. Conducted resume clinics and mock interviews for new Data Science track students.</li>
-              <li>🥇 <strong>Dell Internal Hackathon Winner (2023):</strong> Co-developed a tool for automated license compliance tracking, helping Dell's entitlement reporting system reduce audit rework by ~40%.</li>
-              <li>🤝 <strong>Volunteer Analyst – IpserLab:</strong> Supported open-access ML analytics tools under public-interest AI/ML projects at IpserLab.</li>
+              <li>Led knowledge-sharing sessions for global stakeholders across AMER, EMEA, and APJ (Dell).</li>
+              <li>Authored SOPs and data governance playbooks to standardize ETL and reporting practices.</li>
+              <li>Mentored peers on SQL, Power BI, and data engineering workflows.</li>
             </ul>
           </div>
         </section>
@@ -301,14 +209,14 @@
         <section id="eight">
           <div class="container">
             <h3>Contact Me</h3>
-            🏠 Washington DC, US.
-            <p>If you have any potential opportunity for me, or just want to get in touch, please feel free to drop me an email. You can also reach out to me on LinkedIn from the bottom-right corner of this page. <br/><br/>I look forward to connecting with other industry professionals, sharing knowledge, and exploring new opportunities in the data space. Because in this realm of information, a warm welcome is just a JOIN operation away. 😊</p>
+            &#127968; Washington DC, US.
+            <p>If you have any potential opportunity for me, or just want to get in touch, please feel free to drop me an email. You can also reach out to me on LinkedIn from the bottom-right corner of this page. <br/ > <br/ >I look forward to connecting with other industry professionals, sharing knowledge, and exploring new opportunities in the data space. Because in this realm of information, a warm welcome is just a JOIN operation away. 😊</p>
             <form method="post" action="https://formspree.io/f/xpzvwdzw">
               <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall"><label for="name" class="visually-hidden">Name</label><input type="text" name="name" id="name" placeholder="Name" /></div>
-                <div class="col-6 col-12-xsmall"><label for="email" class="visually-hidden">Email</label><input type="email" name="email" id="email" placeholder="Email" /></div>
-                <div class="col-12"><label for="subject" class="visually-hidden">Subject</label><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-                <div class="col-12"><label for="message" class="visually-hidden">Message</label><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+                <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
                 <div class="col-12">
                   <ul class="actions">
                     <li><input type="submit" class="primary" value="Send Message" /></li>
@@ -326,7 +234,7 @@
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; <span id="year"></span> Tejas Kolpek. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
+            <li>&copy; Tejas Kolpek. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>
       </section>
@@ -334,30 +242,22 @@
     </div>
 
     <!-- Scripts -->
-    <script>
-      // keep the year current automatically
-      document.addEventListener('DOMContentLoaded', function(){
-        var y = document.getElementById('year');
-        if (y) y.textContent = new Date().getFullYear();
-      });
-    </script>
-    <script src="assets/js/jquery.min.js" defer></script>
-    <script src="assets/js/jquery.scrollex.min.js" defer></script>
-    <script src="assets/js/jquery.scrolly.min.js" defer></script>
-    <script src="assets/js/browser.min.js" defer></script>
-    <script src="assets/js/breakpoints.min.js" defer></script>
-    <script src="assets/js/util.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
+    <!-- Minimal CSS overrides for image sizing only; design left intact. -->
     <style>
-      /* Simple screen-reader-only utility */
-      .visually-hidden {
-        position: absolute !important;
-        width: 1px; height: 1px;
-        padding: 0; margin: -1px;
-        overflow: hidden; clip: rect(0, 0, 0, 0);
-        white-space: nowrap; border: 0;
-      }
+      /* Keep avatar crisp and within the circle container */
+      #header .image.avatar img { width: 100%; height: auto; object-fit: cover; }
+      /* Normalize badge/logo sizes in the certifications grid */
+      #five .features .image img { max-height: 140px; width: auto; object-fit: contain; display: block; margin: 0 auto; }
+      /* Keep project thumbs tidy without changing layout */
+      #six .features .image img { max-height: 200px; width: 100%; object-fit: cover; }
     </style>
   </body>
 </html>
